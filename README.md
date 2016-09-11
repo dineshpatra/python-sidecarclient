@@ -194,7 +194,7 @@ sidecar.events.delete(id=new_event.id)
 ### Arguments:
 
 |CMD Parameter name        | openrc param           | sidecarclient equivalent variable    |
-|:-------------------------:------------------------|:-------------------------------------|
+|:------------------------:|------------------------|:-------------------------------------|
 | --os-username            | OS_USER_NAME           | username                             |
 | --os-password            | OS_USER_PASSWORD       | password                             |
 | --os-user-id             | OS_USER_ID             | user_id                              |
