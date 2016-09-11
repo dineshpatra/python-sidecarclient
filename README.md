@@ -100,14 +100,9 @@ Diffrent arguments:
 |4     | event_status          | string ('created', 'running', 'completed') | optional |  event status                  |
 |5     | vm_uuid_list          | list conating, instance ids  | optional  |  the instances, which took part in the evacuation   |
 
+>> Returns: None
 
-
->> Diffrent parameters required:
-
-|SL.NO.| Argument Name         | Data Type    | Default Value | Description                                            |
-|:-----|:----------------------|:-------------|:--------------|:--------------------------------------------------------| 
-|1     | name                  | string       | None          | name of the event                                       |
-|2     | node_uuid             | string       | None          | HOST id on which the event is occuring                  | 
-|3     | vm_uuid_list (optional) | list conating, instance ids  | empty list  |  the instances, which took part in the evacuation   | 
-
-It returns an *Event* object of newly created event.
+## deleting an event
+> obj.events.delete(id)
+> For deleting an event only  event id is required. But the event status must be `completed`
+> returns None
