@@ -185,3 +185,32 @@ print "# DELETE EVENT WITH ID %s                                     #" % (new_e
 print "###############################################################"
 sidecar.events.delete(id=new_event.id)
 ```
+
+
+# python-sidecarclient version 2 CMD
+
+## Command Name: sidecar
+
+### Arguments:
+
+|CMD Parameter name        | openrc param           | sidecarclient equivalent variable    |
+|:-------------------------:------------------------|:-------------------------------------|
+| --os-username            | OS_USER_NAME           | username                             |
+| --os-password            | OS_USER_PASSWORD       | password                             |
+| --os-user-id             | OS_USER_ID             | user_id                              |
+| --os-tenant-name         | OS_TENANT_NAME         | tenant_name                          |
+| --os-tenant-id           | OS_TENANT_ID           | tenant_id                            |
+| --os-project-name        | OS_PROJECT_NAME        | project_name                         |
+| --os-project-id          | OS_PROJECT_ID          | project_id                           |
+| --os-project-domain-name | OS_PROJECT_DOMAIN_NAME | project_domain_name                  |
+| --os-project-domain-id   | OS_PROJECT_DOMAIN_ID   | project_domain_id                    |
+| --os-user-domain-id      | OS_USER_DOMAIN_ID      | user_domain_id                       |
+| --os-user-domain-name    | OS_USER_DOMAIN_NAME    | user_domain_name                     |
+| --os-auth-token          | OS_AUTH_TOKEN          | auth_token                           |
+| --os-auth-url            | OS_AUTH_URL            | auth_url                             |
+| --os-endpoint            | OS_ENDPOINT            | endpoint                             |
+| --os-enpoint-type        | OS_ENDPOINT_TYPE       | endpoint_type                        |
+| --os-region-name         | OS_REGION_NAME         | region_name                          |
+| --os-insecure            | OS_INSECURE            | insecure                             |
+| --os-timeout             | OS_TIMEOUT             | timeout                              |
+| --os-auth-version        | OS_AUTH_VERSION        | auth_version                         |
