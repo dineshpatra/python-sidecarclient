@@ -79,3 +79,34 @@ Function to get the instance of sidecarclient
 |3     | vm_uuid_list (optional) | list conating, instance ids  | empty list  |  the instances, which took part in the evacuation   | 
 
 It returns an *Event* object of newly created event.
+
+## Getting detail of an event
+> obj.events.detail(id)
+
+For getting detail of an event only event id need to be passed.
+
+It returns an *Event* Object.
+
+## Editing an event
+> obj.events.detail(id, **args)
+
+Diffrent arguments:
+|SL.NO.| Argument Name         | Data Type     | Required     | Description                                            |
+|:-----|:----------------------|:-------------|:--------------|:--------------------------------------------------------|
+|1     | id                    | string       | True          | id of the event  to be edited                           |
+|2     | name                  | string       | optional      | name of the event                                       |
+|3     | node_uuid             | string       | optional      | HOST id on which the event is occuring                  | 
+|4     | event_status          | string ('created', 'running', 'completed') | optional |  event status                      |
+|5     | vm_uuid_list          | list conating, instance ids  | optional  |  the instances, which took part in the evacuation   |
+
+
+
+>> Diffrent parameters required:
+
+|SL.NO.| Argument Name         | Data Type    | Default Value | Description                                            |
+|:-----|:----------------------|:-------------|:--------------|:--------------------------------------------------------| 
+|1     | name                  | string       | None          | name of the event                                       |
+|2     | node_uuid             | string       | None          | HOST id on which the event is occuring                  | 
+|3     | vm_uuid_list (optional) | list conating, instance ids  | empty list  |  the instances, which took part in the evacuation   | 
+
+It returns an *Event* object of newly created event.
