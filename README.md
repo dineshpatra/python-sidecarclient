@@ -65,3 +65,17 @@ Function to get the instance of sidecarclient
 |6     | event_status          | string ('created', 'running', 'completed') | None |  event status                      |
 |7     | vm_uuid_list          | list conating, instance ids  | empty list  |  the instances, which took part in the evacuation   |
 |8     | extra                 | json                         | None |  any meta data                                  |
+
+
+## Creating a new event
+> obj.events.create(**arg)
+
+>> Diffrent parameters required:
+
+|SL.NO.| Argument Name         | Data Type    | Default Value | Description                                            |
+|:-----|:----------------------|:-------------|:--------------|:--------------------------------------------------------| 
+|1     | name                  | string       | None          | name of the event                                       |
+|2     | node_uuid             | string       | None          | HOST id on which the event is occuring                  | 
+|3     | vm_uuid_list (optional) | list conating, instance ids  | empty list  |  the instances, which took part in the evacuation   | 
+
+It returns an *Event* object of newly created event.
