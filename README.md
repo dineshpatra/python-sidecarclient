@@ -214,3 +214,77 @@ sidecar.events.delete(id=new_event.id)
 | --os-insecure            | OS_INSECURE            | insecure                             |
 | --os-timeout             | OS_TIMEOUT             | timeout                              |
 | --os-auth-version        | OS_AUTH_VERSION        | auth_version                         |
+
+
+<pre>
+root@controller:/usr/local/lib/python2.7/dist-packages/sidecar# sidecar help
+usage: sidecar [--version] [--debug] [--os-auth-token OS_AUTH_TOKEN]
+               [--os-user-id OS_USER_ID] [--os-username OS_USERNAME]
+               [--os-password OS_PASSWORD] [--os-tenant-name OS_TENANT_NAME]
+               [--os-tenant-id OS_TENANT_ID]
+               [--os-project-name OS_PROJECT_NAME]
+               [--os-project-id OS_PROJECT_ID] [--os-auth-url OS_AUTH_URL]
+               [--os-region-name OS_REGION_NAME]
+               [--os-auth-version OS_AUTH_VERSION] [--os-timeout OS_TIMEOUT]
+               [--os-insecure OS_INSECURE]
+               [--os-user-domain-id OS_USER_DOMAIN_ID]
+               [--os-user-domain-name OS_USER_DOMAIN_NAME]
+               [--os-project-domain-id OS_PROJECT_DOMAIN_ID]
+               [--os-project-domain-name OS_PROJECT_DOMAIN_NAME]
+               <subcommand> ...
+
+SIDECAR SHELL PROGRAM
+
+Positional arguments:
+  <subcommand>
+    all-versions                Getting version details
+    evacuates-event-create      Creating a new event
+    evacuates-event-delete      Deleting a given evacuate event
+    evacuates-event-detail      Getting the detail of an event
+    evacuates-event-edit        Editing a given event
+    evacuates-events-list       Listing and filtering the evacuates events
+    bash-completion             Prints all the commands to stdout
+    help                        Show help for the <command>
+
+Optional arguments:
+  --version                     show program's version number and exit
+  --debug                       Print debugging output.
+  --os-auth-token OS_AUTH_TOKEN
+                                Defaults to env[OS_AUTH_TOKEN].
+  --os-user-id OS_USER_ID       keystone admin user id. defaults to OS_USER_ID
+  --os-username OS_USERNAME     keystone admin username, defaults to
+                                OS_USERNAME
+  --os-password OS_PASSWORD     Openstack admin password, defaults to
+                                OS_PASSWORD
+  --os-tenant-name OS_TENANT_NAME
+                                Defaults to env[OS_TENANT_NAME].
+  --os-tenant-id OS_TENANT_ID   Defaults to env[OS_TENANT_ID].
+  --os-project-name OS_PROJECT_NAME
+                                Defaults to env[OS_PROJECT_NAME].
+  --os-project-id OS_PROJECT_ID
+                                Defaults to env[OS_PROJECT_ID].
+  --os-auth-url OS_AUTH_URL     Keystone auth url. defaults to OS_AUTH_URL
+  --os-region-name OS_REGION_NAME
+                                Defaults to env[OS_REGION_NAME].
+  --os-auth-version OS_AUTH_VERSION
+                                Which os auth version should be used, either 2
+                                or 3. Default OS_AUTH_VERSION
+  --os-timeout OS_TIMEOUT       Maximum time to wait for result.
+  --os-insecure OS_INSECURE     Wheather https should be verified or not.
+                                Defaults to False
+  --os-user-domain-id OS_USER_DOMAIN_ID
+                                Admin user's domain id, Default
+                                OS_USER_DOMAIN_ID
+  --os-user-domain-name OS_USER_DOMAIN_NAME
+                                Admin user's domain name, Default
+                                OS_USER_DOMAIN_NAME
+  --os-project-domain-id OS_PROJECT_DOMAIN_ID
+                                Admin project's domain id, Default
+                                OS_PROJECT_DOMAIN_ID
+  --os-project-domain-name OS_PROJECT_DOMAIN_NAME
+                                Admin user's domain id, Default
+                                OS_USER_DOMAIN_NAME
+
+See "sidecar help COMMAND" for help on a specific command.
+
+</pre>
