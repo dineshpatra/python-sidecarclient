@@ -58,11 +58,11 @@ class InvalidValue(Exception):
     """ When any invalid value is given, this exception will be raised """
     pass
 
-class ConnectionError:
+class ConnectionError(Exception):
     """ When it is unable to connect any API, the error will be raised """
     pass
 
-class TimeOut:
+class TimeOut(Exception):
     """ When connection is timeout """
     pass
 
